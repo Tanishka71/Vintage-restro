@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h3{
+  color: white;
+}
+h5{
+  text-align: center;
+  color: rgb(160, 160, 159);
+}
+p{
+  color: white;
+}
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h4
+{
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+h3{
+  margin-top:20px;
+}
+
+.main-container {
+  width: 100%;
+  height: 25rem;
+  z-index: -2;
+  position: relative;
+}
+.main-container-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-container-dark {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 25rem;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 0.5;
+}
+
+.nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  color: white;
+  padding-right: 6rem;
+  padding-left: 6rem;
+}
+
+.links {
+  display: flex;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.links li {
+  margin-right: 2rem;
+}
+
+.welcome{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  color: white;
+  font-size: 40px;
+  transform: translate(-50%, -50%);
+}
+#welcome-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: white;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+}
+
+.about{
+  width: 100%;
+  height:900px ;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 4rem;
+  gap: 2rem;
+}
+#circle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: black;
+}
+.about1{
+  color: white;
+  font-size: 50px;
+}
+.about2{
+  color: white;
+  position: absolute;
+  padding-right: 30%;
+  padding-top: 50px;
+  top: 70%;
+  left: 30%;
+  text-align: center;
+ font-size: 30px;
+ font-weight:bolder;
+ line-height: 50px;
+}
+
+#items-card-box {
+  width: 100%;
+  background-color: black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 2rem;
+}
+#items{
+  background-color: black;
+  width: 100%;
+  height:600px;
+  color: white;
+ }
+.items-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(253, 251, 251);
+}
+
+.item-heading{
+  display: block;
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  padding-top: 30px;
+}
+.items-card-img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.items-card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.items-card-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.flip-card {
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #ece6e6;
+  margin-bottom: 50px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color:#D9ABAB;
+  color: black;
+}
+.flip-card-back {
+  background-color: #DF6D6D;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* #contacts{
+  background-color: white;
+  width: 100%;
+  height:500px;
+} */
+
+
+#footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+ 
+  align-items: center;
+  bottom: 0;
+  color: white;
+  background-color: rgb(36, 35, 35);
+  padding-right: 6rem;
+  padding-left: 50rem;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
